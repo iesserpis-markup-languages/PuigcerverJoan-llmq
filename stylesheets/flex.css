@@ -1,0 +1,42 @@
+p {
+    height: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+#p1 {
+    padding-top: 10px;
+    background-color: red;
+    flex-grow: 0;
+}
+#p2 {
+    background-color: green;
+    height: 70px;
+    flex-grow: 2;
+}
+#p3 {
+    background-color: cyan;
+    height: 60px;
+    flex-grow: 3;
+    align-self: flex-start;
+}
+#p4 {
+    padding-top: 30px;
+    background-color: gold;
+    height: 60px;
+    order: -1;
+    align-self: flex-end;
+}
+#p5 {
+    background-color: orange;
+}
