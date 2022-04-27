@@ -14,4 +14,4 @@ $(document).ready(function() {
     $("#button-hide-index").click(function() {
         $("#index").toggle();
     });
-})
+});

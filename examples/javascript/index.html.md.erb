@@ -1,0 +1,12 @@
+---
+layout: document
+title: JavaScript Examples
+---
+# <%= current_page.data.title %>
+
+This is the list of JavaScript examples:
+<% current_resource.children.each do | el | %>
+
+<% name =  File.basename(el.path.remove("/index.html")) %>
+- <%= link_to name, name %>
+<% end %>

@@ -1,0 +1,19 @@
+---
+layout: document
+title: Classes 
+---
+# <%= current_page.data.title %>
+
+{:toc}
+
+<% current_resource.children.each do | el | %>
+## <%= File.basename(el.path) %>
+
+<% ext = File.extname(el.path).delete('.') %>
+
+```<%= ext %>
+<%= load_file el.path -%>
+```
+<% end %>
+
+<%= link_to "Demo #{current_page.data.title}", "./classes.html", class: "block center big" %>
